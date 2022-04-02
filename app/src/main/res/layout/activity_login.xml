@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:contentDescription="@string/welcome"
+        android:src="@drawable/vector_login"
+        app:layout_constraintBottom_toTopOf="@+id/clCard"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.45" />
+
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome"
+        android:textColor="@color/dark_text"
+        android:textSize="15pt"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@id/ivLogo"
+        app:layout_constraintRight_toRightOf="@+id/ivLogo"
+        app:layout_constraintTop_toBottomOf="@+id/ivLogo" />
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="@string/intro"
+        android:textColor="@color/dark_text"
+        android:textSize="9pt"
+        app:layout_constraintLeft_toLeftOf="@id/tvWelcome"
+        app:layout_constraintTop_toBottomOf="@+id/tvWelcome" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clCard"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@drawable/bg_login_input"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/inputLine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.6" />
+
+        <EditText
+            android:id="@+id/etUsername"
+            android:layout_width="320dp"
+            android:layout_height="60dp"
+            android:background="@drawable/stroke_input_text"
+            android:hint="@string/username"
+            android:paddingHorizontal="20dp"
+            android:textColor="@color/orange"
+            android:textColorHint="@color/orange"
+            android:textSize="9pt"
+            app:layout_constraintBottom_toTopOf="@+id/etPassword"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="320dp"
+            android:layout_height="60dp"
+            android:background="@drawable/stroke_input_text"
+
+            android:hint="@string/password"
+            android:paddingHorizontal="20dp"
+            android:textColor="@color/orange"
+            android:textColorHint="@color/orange"
+            android:textSize="9pt"
+            app:layout_constraintBottom_toBottomOf="@+id/inputLine"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/etUsername" />
+
+        <Button
+            android:id="@+id/btLogin"
+            android:layout_width="320dp"
+            android:layout_height="60dp"
+            android:background="@drawable/bg_button"
+            android:text="@string/login"
+            android:textColor="@color/light_text"
+            android:textSize="9pt"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.90" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

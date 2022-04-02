@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">BankApp</string>
+    <string name="login">Đăng nhập</string>
+    <string name="username">Tài khoản</string>
+    <string name="password">Mật khẩu</string>
+    <string name="welcome">Welcome to BBank</string>
+    <string name="intro">An toàn - Bảo mật - Tiết kiệm</string>
+    <string name="bank_name">B-Bank</string>
+    <string name="serial_number">9704 0322 6580 6714</string>
+    <string name="more_info">MEMBER SINCE 06/18 GOOD THRU</string>
+    <string name="atm">ATM</string>
+    <string name="bank">Bank</string>
+    <string name="b">B</string>
+    <string name="vi_cua_toi">Ví của tôi</string>
+    <string name="dich_vu">Dịch vụ</string>
+    <string name="so_du">123.123.123 VNĐ</string>
+    <string name="lich_su">Lịch sử giao dịch</string>
+    <string name="account_name">NGUYEN THANH TU</string>
+    <string name="nap_tien">Nạp tiền</string>
+    <string name="chuyen_tien">Chuyển tiền</string>
+    <string name="more">Chức năng khác</string>
+    <string name="saccombank">Saccombank</string>
+    <string name="aribank">Aribank</string>
+    <string name="date">31 Tháng 3 2022</string>
+    <string name="hoan_tat">Hoàn tất</string>
+    <string name="so_tien_nap">Số tiền nạp</string>
+    <string name="nhap_so_tien">Nhập số tiền</string>
+    <string name="value1">100.000</string>
+    <string name="value2">200.000</string>
+    <string name="value3">300.000</string>
+    <string name="value5">500.000</string>
+    <string name="value10">1.000.000</string>
+    <string name="value20">2.000.000</string>
+</resources>
